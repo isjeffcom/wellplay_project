@@ -11,7 +11,7 @@ University of Portsmouth
 <html>
 
   <head>
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <title>Well Played</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./asset/css/font-awesome.min.css">
@@ -21,12 +21,13 @@ University of Portsmouth
     <!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
 
   </head>
-
+  <h1 class='noLS'>Webpage currently unable to support landscape view.</h1>
   <body>
+
     <nav class='navBar'>
 
-      <div class='navBar_logo'>
-        <img src = './asset/img/headLogo.png' alt='logo'>
+      <div class='navBar_logo' id='logoBg'>
+        <img src = './asset/img/headLogo.png' alt='logo' id='logo'>
       </div>
 
       <div class='navBar_sBar'>
@@ -51,19 +52,7 @@ University of Portsmouth
 
       <!--a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
       <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
-      <div class='sInnerText'>
-        <h1 class="myTexts">CALL OF DUTY: INFINITE WARFARE</h1>
-        <h1 class="myTexts">OVERWATCH: A GREAT GAME</h1>
-        <h1 class="myTexts">AHIDJGFS: SDFDFSFGDSF</h1>
-        <h1 class="myTexts">SDFFGDX: WEHFGSE</h1>
-      </div>
 
-      <div class='sInnerTextH3'>
-        <a class="myTextsH3">Infinite Warfare delivers three unique game modes:<br> Campaign returns to the gritty, large-scale war roots of the franchise, while boldly looking ahead. </a>
-        <a class="myTextsH3">opsvuisfugnv suiofv sif jsiafgj df vfigjdfi fd fg:<br> sgrgfdgfgdgsvsdfg,gfmd,dhdghfg, dfsgr,rgfidsiogohdov,sdiofuhvdofsgsdf.dfisgjdiogojbciopbjdsg,figii. </a>
-        <a class="myTextsH3">sdifaj sidf uhwer jk sdiuhzl sflah uihfva foh oij:<br> Campaign returns to the gritty, lopw e jifjfa djifj isaf jisr afj sjaiodjo xnzvfh uasdfu saidojf s. </a>
-        <a class="myTextsH3">sdfas dfdhusghaisudhf shda dsiofja osdjf osidjf a:<br> safuh osdadfs a,fd ijsia fsd, , odijo fhgosadfj oisdj hao;dfjuioh swuo fiosdf aduioh soiad fis dof. </a>
-      </div>
 
 
 
@@ -71,15 +60,33 @@ University of Portsmouth
         <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
     </div>
 
+
+
+    <div class=sInnerText>
+      <div class='sInnerTextH1' id = 'btx'>
+        <h1 class="myTexts">CALL OF DUTY</h1>
+        <h1 class="myTexts">OVERWATCHSDF</h1>
+        <h1 class="myTexts">AHIDJGFSSDFD</h1>
+        <h1 class="myTexts">SDFFGDXSDFDF</h1>
+      </div>
+
+      <div class='sInnerTextH3'>
+        <a class="myTextsH3">Infinite Warfare delivers three unique game modes:<br> Campaign returns to the gritty, large-scale war roots of the franchise, while boldly looking ahead. </a>
+        <a class="myTextsH3">opsvuisfugnv suiofv sif jsiafgj df vfigjdfi fd fg:<br> sgrgfdgfmd,dhdghfg, dfsgr,rgfidsiogohdov,sdioogojbciopbjdsg,figii.chise, while boldly looking ahea. </a>
+        <a class="myTextsH3">sdifaj sidf uhwer jk sdiuhzl sflah uihfva foh oij:<br> Campaign returns to the gritty, lopw e jifjfa djifj isaf jisr afj sjaiodjo xnzvfh uasdfu saidojf s. </a>
+        <a class="myTextsH3">sdfas dfdhusghaisudhf shda dsiofja osdjf osidjf a:<br> safuh osdadfs a,fd ijsia fsd, , odijo fhgosadfj oisdj hao;dfjuioh swuo fiosdf aduioh soiad fis dof. </a>
+      </div>
+    </div>
+
+    <div class='sButton'>
+      <button class = 'sliderButton' onclick="window.location.href='#'">WELL PLAYED</button>
+    </div>
+
     <div class='sInnerIndicator'>
       <i class="fa fa-circle fa-1x fa-inverse myInd indCircle" aria-hidden="true"></i>
       <i class="fa fa-circle fa-1x fa-inverse myInd indCircle" aria-hidden="true"></i>
       <i class="fa fa-circle fa-1x fa-inverse myInd indCircle" aria-hidden="true"></i>
       <i class="fa fa-circle fa-1x fa-inverse myInd indCircle" aria-hidden="true"></i>
-    </div>
-
-    <div class='sButton'>
-      <button class = 'sliderButton' onclick="window.location.href='#'">WELL PLAYED</button>
     </div>
 
     <!--div class='bigText'>
@@ -106,7 +113,7 @@ University of Portsmouth
 
 
     <footer class='footer'>
-      <img src='./asset/img/headlogo.png' alt='logo'>
+      <img src='./asset/img/headLogo.png' alt='logo'>
 
       <div class='footer_list'>
         <ul>

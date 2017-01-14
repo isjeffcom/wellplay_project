@@ -5,11 +5,13 @@ carousel();
 bigText();
 bigTextH3();
 indicator();
+replaceLogo();
 
 
 /*function plusDivs(n) {
     carousel(slideIndex += n);
 }*/
+
 
 function carousel() {
     var i;
@@ -27,14 +29,42 @@ function carousel() {
 function indicator() {
     var j;
     var ind = document.getElementsByClassName("myInd");
+    //var bt = document.getElementById("btx");
+
     for (j = 0; j < ind.length; j++) {
-      ind[j].className="fa fa-circle fa-1x fa-inverse myInd";
-      ind[j].style.transform="scale(1.0)";
+      if(window.innerWidth > 600){
+        ind[j].className="fa fa-circle fa-1x fa-inverse myInd";
+        ind[j].style.transform="scale(1.0)";
+        ind[j].style.opacity = "1.0";
+      }else{
+        ind[j].className="fa fa-circle fa-1x fa-inverse myInd";
+        ind[j].style.transform="scale(1.0)";
+        ind[j].style.opacity = "0.1";
+      }
     }
     textIndex++;
+
     if (textIndex > ind.length) {textIndex = 1;}
-    ind[slideIndex-1].className="fa fa-chevron-right fa-1x fa-inverse myInd";
-    ind[slideIndex-1].style.transform="scale(1.5)";
+    if(window.innerWidth > 600){
+      ind[slideIndex-1].className="fa fa-chevron-right fa-1x fa-inverse myInd";
+      ind[slideIndex-1].style.transform="scale(1.5)";
+    }else{
+      ind[slideIndex-1].className="fa fa-circle fa-1x fa-inverse myInd";
+      ind[slideIndex-1].style.transform="scale(1.0)";
+      ind[slideIndex-1].style.opacity = "0.6";
+    }
+
+
+    /*if(slideIndex == 1){
+      console.log('400');
+      bt.style.marginTop="-20.6%";
+      console.log(bt);
+
+    }else{
+      console.log('440');
+      bt.style.marginTop="-23%";
+      console.log(bt);
+    }*/
     setTimeout(indicator, 10000); //10s
 }
 
@@ -62,4 +92,15 @@ function bigTextH3() {
     if (textH3Index > d.length) {textH3Index = 1}
     d[textH3Index-1].style.display = "block"; //display
     setTimeout(bigTextH3, 10000); //10s
+}
+
+function replaceLogo(){
+  if(window.innerWidth < 600){
+    console.log(window.innerWidth);
+    logo = document.getElementById('logo');
+    logoBg = document.getElementById('logoBg');
+    console.log(logoBg);
+    logo.src = "./asset/img/headLogoMobile.png";
+    logoBg.style.backgroundColor = "transparent";
+  }
 }
