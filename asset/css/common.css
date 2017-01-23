@@ -122,7 +122,7 @@ button:focus {
 }
 
 .navBar_text{
-  float:right;
+  display:flex;
   position: absolute;
   right:2%;
   margin-top: -2%;
@@ -156,6 +156,14 @@ button:focus {
   cursor: pointer;
 }
 
+#navUn{
+  display:none;
+}
+
+#navOut{
+  display:none;
+}
+
 
 @media screen and (max-width: 1440px){
 
@@ -176,6 +184,10 @@ button:focus {
   .navBar_sBar input:focus{
     transform: translateX(-320px);
     width:1000px;
+  }
+
+  #navMUN{
+    font-size:18px !important;
   }
 }
 
@@ -198,6 +210,10 @@ button:focus {
   .navBar_sBar input:focus{
     transform: translateX(-200px);
     width:600px;
+  }
+
+  #navMUN{
+    font-size:16px !important;
   }
 
 }
@@ -224,6 +240,10 @@ button:focus {
 
   .navBar_mobile{
     margin-top:-13%;
+  }
+
+  #navMUN{
+    font-size:16px !important;
   }
 
 }

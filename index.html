@@ -19,7 +19,7 @@ University of Portsmouth
     <link rel="stylesheet" type="text/css" href="./asset/css/index.css" >
     <link rel="stylesheet" type="text/css" href="./asset/css/slider.css" >
     <script src="./js/scroll.js"></script>
-    <script src="./js/signin.js"></script>
+
 
     <!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
 
@@ -35,16 +35,19 @@ University of Portsmouth
       </div>
 
       <div class='navBar_sBar'>
-        <input id='ssbar' type='text' value='&#xf002;  SEARCH'>
+        <input id='ssbar' type='text' onfocus="if(value=='&#xf002;  SEARCH') value = ''" onblur="if (this.value == '') (this.value='&#xf002;  SEARCH')" value='&#xf002;  SEARCH'>
       </div>
 
       <div class='navBar_text'>
-        <a href='#' onclick='openDialog()'>Sign In</a>
-        <a href='#' onclick='openDialog()'>Sign Up</a>
+        <a href='#' onclick='openDialog()' id='navIn'>Sign In</a>
+        <a href='#' onclick='openDialog()' id='navUp'>Sign Up</a>
+        <a href='#' id='navUn'></a>
+        <a href='#' onclick='signOut()' id='navOut'>Sign Out</a>
       </div>
 
       <div class='navBar_mobile'>
-        <i class="fa fa-user" aria-hidden="true" onclick='openDialog()'></i>
+        <i class="fa fa-user" aria-hidden="true" onclick='openDialog()' id='navMBTN'></i>
+        <a class='navBar_mobile_Un' id='navMUN' onclick='signOut()'>Sign Out</a>
       </div>
 
     </nav>
@@ -777,15 +780,16 @@ University of Portsmouth
     <button class='vl_more_button' onclick="javascript:window.open('#');"> -- MORE -- </button>
   </div>
 
+  <script src="./js/signin.js"></script>
   <script src="./js/mobile.js"></script>
 
 
 </div>
   <div class='dialog' id='dialog'>
     <div class='dialog_close' id='dialogClose'><i class="fa fa-times" aria-hidden="true" onclick='closeDialog()'></i></div>
-    <div class='dialog_input'>
-      <input type='text' id='username' value='Email' onfocus="if(value=='Email') value = '' ;if(value=='') value='Email'"></input>
-      <input type='text' id='password' value='Password' onfocus="if(value=='Password') value = '', type='password'"></input>
+    <div class='dialog_input' id='dialog_sign_input'>
+      <input type='text' id='username' value='Email' onfocus="if(value=='Email') value = ''" onblur="if(value=='') value = 'Email'"></input>
+      <input type='text' id='password' value='Password' onfocus="if(value=='Password') value = '', type='password'" onblur="if(value =='') value = 'Password', type='text'"></input>
     </div>
     <div class='dialog_term'>
       <a>By creating an account, you agree with our </a><a href = '#' class='dialog_term_policy'>term and policy</a><a>.</a>
@@ -829,9 +833,9 @@ University of Portsmouth
       </div>
 
       <div class='footer_socialNet'>
-        <a href='#'><i class="fa fa-facebook fa-2x fa-inverse" aria-hidden="true"></i></a>
-        <a href='#'><i class="fa fa-twitter fa-2x fa-inverse" aria-hidden="true"></i></a>
-        <a href='#'><i class="fa fa-snapchat-ghost fa-2x fa-inverse" aria-hidden="true"></i></a>
+        <a href='https://www.facebook.com'><i class="fa fa-facebook fa-2x fa-inverse" aria-hidden="true"></i></a>
+        <a href='https://twitter.com/'><i class="fa fa-twitter fa-2x fa-inverse" aria-hidden="true"></i></a>
+        <a href='https://www.snapchat.com/'><i class="fa fa-snapchat-ghost fa-2x fa-inverse" aria-hidden="true"></i></a>
       </div>
 
 
