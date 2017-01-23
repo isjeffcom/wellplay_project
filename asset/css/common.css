@@ -21,6 +21,10 @@ a{
   text-decoration: none !important;
 }
 
+button:focus {
+  outline: none;
+}
+
 .noLS{
   display:none;
 }
@@ -63,9 +67,9 @@ a{
 .navBar_logo:hover{
   opacity: 0.6;
   /*timer*/
-  -webkit-transition: all 100ms cubic-bezier(.25,.8,.25,1);
-	-moz-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+  -webkit-transition: all 180ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
 }
 
 .navBar_logo>img{
@@ -96,9 +100,9 @@ a{
   border: 2px solid #ffffff;
   font-family: FontAwesome,'Helvetica Neue', Helvetica, Arial, sans-serif;
   /*timer*/
-  -webkit-transition: all 100ms cubic-bezier(.25,.8,.25,1);
-	-moz-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+  -webkit-transition: all 160ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 160ms ease-in-out;
+	transition: all 160ms ease-in-out;
 }
 
 .navBar_sBar input:focus{
@@ -106,15 +110,15 @@ a{
   width:400px;
   height: 40px;
   border-radius: 2px;
-  -webkit-transform:translateX(63px);
-  transform:translateX(63px);
+  -webkit-transform:translateX(-46px);
+  transform:translateX(-46px);
   color:#888888;
   background-color:#fafafa;
   box-shadow: 3px 3px 8px #999999;
   /*timer*/
-  -webkit-transition: all 100ms cubic-bezier(.25,.8,.25,1);
-	-moz-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+  -webkit-transition: all 160ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 160ms ease-in-out;
+	transition: all 160ms ease-in-out;
 }
 
 .navBar_text{
@@ -134,15 +138,33 @@ a{
 .navBar_text a:hover{
   opacity: 1;
   /*timer*/
-  -webkit-transition: all 100ms cubic-bezier(.25,.8,.25,1);
-	-moz-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+  -webkit-transition: all 180ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
 
 }
+
+
+.navBar_mobile{
+  display:none;
+  float:right;
+  position: absolute;
+  right:3%;
+  margin-top: -3.2%;
+  font-size:34px;
+  color:#ffffff;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 1440px){
 
   .navBar_text{
     display:none;
+  }
+
+  .navBar_mobile{
+    display:block;
   }
 
   .navBar_sBar{
@@ -197,6 +219,10 @@ a{
     display:none;
   }
 
+  .navBar_mobile{
+    margin-top:-13%;
+  }
+
 }
 
 /*slider start*/
@@ -247,7 +273,17 @@ a{
   margin-left: 260px;
   margin-top: 350px;
   position: absolute;
+  cursor: default;
 }
+
+.sInnerText:hover{
+  opacity: 0.7;
+  /*timer*/
+  -webkit-transition: all 180ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
+}
+
 .sInnerTextH1{
 
   position:relative;
@@ -477,9 +513,9 @@ a{
 .sideBar li:hover{
   opacity: 0.9;
   /*timer*/
-  -webkit-transition: all 100ms cubic-bezier(.25,.8,.25,1);
-	-moz-transition: all 100ms ease-in-out;
-	transition: all 100ms ease-in-out;
+  -webkit-transition: all 180ms cubic-bezier(.25,.8,.25,1);
+	-moz-transition: all 180ms ease-in-out;
+	transition: all 180ms ease-in-out;
 
 }
 
@@ -548,6 +584,7 @@ a{
 /*Footer Start*/
 
 .footer{
+  margin-top:5%;
   color:#ffffff;
   height:120px;
   background-color:#1e1e1e;

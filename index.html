@@ -3,7 +3,7 @@
 Well Played Porject
 Created by Jeff Wu
 Collaborators: Liam White, Jeff Wu, Simon Stringer
-Common Style Sheet
+Index Page
 University of Portsmouth
 2017.01.11
 -->
@@ -18,9 +18,12 @@ University of Portsmouth
     <link rel="stylesheet" type="text/css" href="./asset/css/common.css" >
     <link rel="stylesheet" type="text/css" href="./asset/css/index.css" >
     <link rel="stylesheet" type="text/css" href="./asset/css/slider.css" >
+    <script src="./js/scroll.js"></script>
+    <script src="./js/signin.js"></script>
     <!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
 
   </head>
+
   <h1 class='noLS'>Webpage currently unable to support landscape view.</h1>
   <body>
 
@@ -35,10 +38,13 @@ University of Portsmouth
       </div>
 
       <div class='navBar_text'>
-        <a href='#'>Sign In</a>
-        <a href='#'>Sign Up</a>
+        <a href='#' onclick='openDialog()'>Sign In</a>
+        <a href='#' onclick='openDialog()'>Sign Up</a>
       </div>
 
+      <div class='navBar_mobile'>
+        <i class="fa fa-user" aria-hidden="true" onclick='openDialog()'></i>
+      </div>
 
     </nav>
 
@@ -52,9 +58,6 @@ University of Portsmouth
 
       <!--a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
       <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
-
-
-
 
         <!--a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
         <a class="w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a-->
@@ -106,9 +109,678 @@ University of Portsmouth
 
     </div>
 
-    <div class="content">
+    <!--div class="content">
       <img src='./asset/img/temp.png' width=100%>
+    </div-->
+
+    <div class='content'>
+
+      <div class='content_title'>
+        <a class='ct ct_1'>RECOMMENDED TOPIC 1</a>
+      </div>
+
+        <div class='content_video_list' id='cvl_1'>
+
+          <div class='vl_container vl1'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl2'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl3'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl4'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl5'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl6'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl7'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_container vl8'>
+            <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+            <div class='vl_text'>
+              <a href='#' class='vl_title'>Video Title</a><br>
+              <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+              <br><br>
+            </div>
+            <div class='vl_info'>
+              <a href='#' class='vl_info_views'>14223 views</a>
+              <a href='#' class='vl_info_midDot'> ‧ </a>
+              <a href='#' class='vl_info_uploader'>Dojo155</a>
+            </div>
+          </div>
+
+          <div class='vl_button'>
+            <button class='vl_back_button' id='vl_back_1' onclick="sR(this.parentNode.parentNode.id, this.id, this.nextElementSibling.id)"><i class="fa fa-angle-left fa-5" aria-hidden="true"></i></button>
+            <button class='vl_next_button' id='vl_next_1' onclick="sL(this.parentNode.parentNode.id, this.id, this.previousElementSibling.id)"><i class="fa fa-angle-right fa-5" aria-hidden="true"></i></button>
+          </div>
+
     </div>
+
+    <div class='content_title'>
+      <a class='ct ct_1'>RECOMMENDED TOPIC 2</a>
+    </div>
+
+    <div class='content_video_list' id='cvl_2'>
+
+      <div class='vl_container vl1'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl2'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl3'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl4'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl5'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl6'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl7'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_container vl8'>
+        <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+        <div class='vl_text'>
+          <a href='#' class='vl_title'>Video Title</a><br>
+          <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+          <br><br>
+        </div>
+        <div class='vl_info'>
+          <a href='#' class='vl_info_views'>14223 views</a>
+          <a href='#' class='vl_info_midDot'> ‧ </a>
+          <a href='#' class='vl_info_uploader'>Dojo155</a>
+        </div>
+      </div>
+
+      <div class='vl_button'>
+        <button class='vl_back_button' id='vl_back_2' onclick="sR(this.parentNode.parentNode.id, this.id, this.nextElementSibling.id)"><i class="fa fa-angle-left fa-5" aria-hidden="true"></i></button>
+        <button class='vl_next_button' id='vl_next_2' onclick="sL(this.parentNode.parentNode.id, this.id, this.previousElementSibling.id)"><i class="fa fa-angle-right fa-5" aria-hidden="true"></i></button>
+      </div>
+
+  </div>
+
+  <div class='banner'>
+
+    <div class='banner_img_inner'>
+      <img src='./asset/img/banner/banner_1.jpg'>
+    </div>
+
+  </div>
+
+  <div class='content_title'>
+    <a class='ct ct_1'>RECOMMENDED TOPIC 3</a>
+  </div>
+
+  <div class='content_video_list' id='cvl_3'>
+
+    <div class='vl_container vl1'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl2'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl3'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl4'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl5'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl6'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl7'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl8'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_button'>
+      <button class='vl_back_button' id='vl_back_3' onclick="sR(this.parentNode.parentNode.id, this.id, this.nextElementSibling.id)"><i class="fa fa-angle-left fa-5" aria-hidden="true"></i></button>
+      <button class='vl_next_button' id='vl_next_3' onclick="sL(this.parentNode.parentNode.id, this.id, this.previousElementSibling.id)"><i class="fa fa-angle-right fa-5" aria-hidden="true"></i></button>
+    </div>
+
+  </div>
+
+  <div class='content_title'>
+    <a class='ct ct_1'>RECOMMENDED TOPIC 4</a>
+  </div>
+
+  <div class='content_video_list' id='cvl_4'>
+
+    <div class='vl_container vl1'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl2'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl3'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl4'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl5'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl6'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl7'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl8'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_button'>
+      <button class='vl_back_button' id='vl_back_4' onclick="sR(this.parentNode.parentNode.id, this.id, this.nextElementSibling.id)"><i class="fa fa-angle-left fa-5" aria-hidden="true"></i></button>
+      <button class='vl_next_button' id='vl_next_4' onclick="sL(this.parentNode.parentNode.id, this.id, this.previousElementSibling.id)"><i class="fa fa-angle-right fa-5" aria-hidden="true"></i></button>
+    </div>
+
+  </div>
+
+  <div class='banner'>
+
+    <div class='banner_img_inner'>
+      <img src='./asset/img/banner/banner_2.jpg'>
+    </div>
+
+  </div>
+
+  <div class='content_title'>
+    <a class='ct ct_1'>RECOMMENDED TOPIC 5</a>
+  </div>
+
+  <div class='content_video_list' id='cvl_5'>
+
+    <div class='vl_container vl1'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl2'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl3'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl4'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl5'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl6'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl7'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_container vl8'>
+      <a href='#'><img src='./asset/img/vl/v1.jpg' alt='image'></a><br>
+      <div class='vl_text'>
+        <a href='#' class='vl_title'>Video Title</a><br>
+        <a href='#' class='vl_details'>Video detail for explain what is this video and who make it.Video detail for explain what is this video...</a>
+        <br><br>
+      </div>
+      <div class='vl_info'>
+        <a href='#' class='vl_info_views'>14223 views</a>
+        <a href='#' class='vl_info_midDot'> ‧ </a>
+        <a href='#' class='vl_info_uploader'>Dojo155</a>
+      </div>
+    </div>
+
+    <div class='vl_button'>
+      <button class='vl_back_button' id='vl_back_5' onclick="sR(this.parentNode.parentNode.id, this.id, this.nextElementSibling.id)"><i class="fa fa-angle-left fa-5" aria-hidden="true"></i></button>
+      <button class='vl_next_button' id='vl_next_5' onclick="sL(this.parentNode.parentNode.id, this.id, this.previousElementSibling.id)"><i class="fa fa-angle-right fa-5" aria-hidden="true"></i></button>
+    </div>
+
+  </div>
+</div>
+  <div class='dialog' id='dialog'>
+    <div class='dialog_close' id='dialogClose'><i class="fa fa-times" aria-hidden="true" onclick='closeDialog()'></i></div>
+    <div class='dialog_input'>
+      <input type='text' value='Email' onfocus="if(value=='Email') value = '' ;if(value=='') value='Email'"></input>
+      <input type='text' value='Password' onfocus="if(value=='Password') value = '', type='password'"></input>
+    </div>
+    <div class='dialog_term'>
+      <a>By creating an account, you agree with our </a><a href = '#' class='dialog_term_policy'>term and policy</a><a>.</a>
+    </div>
+
+    <div class='dialog_button'>
+      <button onclick="alert('Login successful');">Sign in or Create account</button>
+    </div>
+
+    <div class='dialog_iForgot'>
+      <a href='#'>I forgot my password</a>
+    </div>
+  </div>
+
+  <div class='dialogOverlay' id='dialogOverlay'>
+    <a> </a>
+  </div>
+
+
+
 
 
 
@@ -118,11 +790,11 @@ University of Portsmouth
       <div class='footer_list'>
         <ul>
           <li><a href='#' target="_blank">About us</a></li>
-          <li> · </li>
+          <li> ‧ </li>
           <li><a href='#' target="_blank">Terms</a></li>
-          <li> · </li>
+          <li> ‧ </li>
           <li><a href='#' target="_blank">Privacy Policy</a></li>
-          <li> · </li>
+          <li> ‧ </li>
           <li><a href='#' target="_blank">Help</a></li>
         </ul>
       </div>

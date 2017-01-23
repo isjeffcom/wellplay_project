@@ -1,3 +1,12 @@
+/*
+Well Played Porject
+Created by Jeff Wu
+Collaborators: Liam White, Jeff Wu, Simon Stringer
+Common Style Sheet
+University of Portsmouth
+2017.01.11
+*/
+
 var slideIndex = 0;
 var textIndex = 0;
 var textH3Index = 0;
