@@ -1,5 +1,16 @@
+/*
+Well Played Porject
+Created by Jeff Wu
+Collaborators: Liam White, Jeff Wu, Simon Stringer
+Video list scroll Function
+University of Portsmouth
+2017.01.11
+*/
+
 
 //Scroll Recommened video list
+
+//Scroll from left
 function sL(idDiv,idThis,idOp){
   var div = document.getElementById(idDiv); //Get this div
   var next = document.getElementById(idThis);
@@ -18,6 +29,7 @@ function sL(idDiv,idThis,idOp){
   next.style.display = "none";
 }
 
+//Scroll from right
 function sR(idDiv,idThis,idOp){
   var div = document.getElementById(idDiv); //Get this div
   var next = document.getElementById(idOp);

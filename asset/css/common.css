@@ -204,6 +204,9 @@ button:focus {
 
 
 @media screen and (max-width: 600px){
+  .navBar_logo{
+    background-color: transparent;
+  }
 
   .navBar_logo>img{
     height:48px;

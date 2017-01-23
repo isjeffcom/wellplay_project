@@ -2,7 +2,7 @@
 Well Played Porject
 Created by Jeff Wu
 Collaborators: Liam White, Jeff Wu, Simon Stringer
-Common Style Sheet
+Slider Function
 University of Portsmouth
 2017.01.11
 */
@@ -14,7 +14,7 @@ carousel();
 bigText();
 bigTextH3();
 indicator();
-replaceLogo();
+//replaceLogo();
 
 
 /*function plusDivs(n) {
@@ -103,7 +103,7 @@ function bigTextH3() {
     setTimeout(bigTextH3, 10000); //10s
 }
 
-function replaceLogo(){
+/*function replaceLogo(){
   if(window.innerWidth < 600){
     console.log(window.innerWidth);
     logo = document.getElementById('logo');
@@ -112,4 +112,4 @@ function replaceLogo(){
     logo.src = "./asset/img/headLogoMobile.png";
     logoBg.style.backgroundColor = "transparent";
   }
-}
+}*/
