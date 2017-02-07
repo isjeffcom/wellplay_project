@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<!--
+Well Played Porject
+Created by Jeff Wu, Liam White, Simon Stringer
+Common Style Sheet
+University of Portsmouth
+2017.01.11
+-->
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Well Played</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./asset/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./asset/css/common.css" >
+    <link rel="stylesheet" type="text/css" href="./asset/css/index.css" >
+    <link rel="stylesheet" type="text/css" href="./asset/css/video.css" >
+    <link rel="stylesheet" type="text/css" href="./asset/css/slider.css" >
+    <link rel="icon" href="./asset/img/headLogo.png" type="image/gif" sizes="16x16">
+	<!--link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"-->
+
+  </head>
+  <h1 class='noLS'>Webpage currently unable to support landscape view.</h1>
+  <body>
+
+    <nav class='navBar'>
+
+      <div class='navBar_logo' id='logoBg'>
+        <img src = './asset/img/headLogo.png' alt='logo' id='logo'>
+      </div>
+
+      <div class='navBar_sBar'>
+        <input id='ssbar' type='text' onfocus="if(value=='&#xf002;  SEARCH') value = ''" onblur="if (this.value == '') (this.value='&#xf002;  SEARCH')" value='&#xf002;  SEARCH'>
+      </div>
+
+      <div class='navBar_text'>
+        <a href='#' onclick='openDialog()' id='navIn'>Sign In</a>
+        <a href='#' onclick='openDialog()' id='navUp'>Sign Up</a>
+        <a href='#' id='navUn'></a>
+        <a href='#' onclick='signOut()' id='navOut'>Sign Out</a>
+      </div>
+
+      <div class='navBar_mobile'>
+        <i class="fa fa-user" aria-hidden="true" onclick='openDialog()' id='navMBTN'></i>
+        <a class='navBar_mobile_Un' id='navMUN' onclick='signOut()'>Sign Out</a>
+      </div>
+
+    </nav>
+
+	<div class="varea">
+
+		<div class="video">
+
+			<video width="400" controls>
+
+			  <source src="witcher.mp4" type="video/mp4">
+
+			  Your browser does not support HTML5 video.
+
+			</video>
+
+	     </div>
+
+	</div>
+
+	<div class="info">
+
+	    <div class="streamer_pro">
+
+	                 <img src = './asset/img/pro1.png' height=80px>
+
+				 </div>
+
+	  <br><h1>Streamer name</h1>
+
+	      <div class="viewCount"></span> 165,247 Views</a>
+
+
+	      </div>
+
+                        <div class="follow">
+
+		                     <button class='btn01'><a href="">Follow</a></button>
+
+                        </div>
+
+				  <h2>Streaming<a href=""> Game name</a></h2><br>
+
+	   <p>A brief description the streamer can input to inform their audience of what is being displayed on the stream.</p>
+
+	</div>
+
+				<div class="line">
+
+				       <img src = "./asset/img/line3.jpg">
+
+				</div>
+
+	      <div class="columns" align="center">
+
+			 <h1>Comments</h1>
+
+		           <br>
+
+
+			   <figure>
+
+			      <figcaption  class='comments_Content'>
+
+			    	 <img src = './asset/img/pro2.png' height=80px>
+			    	<a class="comments_userName">User name</a> <br>
+			    	<a class="detail"> The comment the user inputs is displayed in this box</a> <br>
+
+			        </figcaption>
+			   </figure>
+
+			   <figure>
+
+			    <figcaption class='comments_Content01'>
+
+					<img src = './asset/img/pro3.png' height=80px>
+			    	<a class="comments_userName01"> User name</a> <br>
+			    	<a class="detail"> The comment the user inputs is displayed in this box</a> <br>
+
+			    </figcaption>
+			   </figure>
+
+
+
+		   </div>
+
+		   <div class="columns" align="center">
+
+
+		           <br>
+
+
+			   <figure>
+
+			      <figcaption class='comments_Content02'>
+
+
+					<img src = './asset/img/pro4.png' height=80px>
+			    	<a class="comments_userName02">User name</a> <br>
+			    	<a class="detail"> The comment the user inputs is displayed in this box</a> <br>
+
+			        </figcaption>
+			   </figure>
+
+			<figure>
+
+			      <figcaption class='comments_Content03'>
+
+
+					<img src = './asset/img/pro5.png' height=80px>
+			    	<a class="comments_userName03">User name</a> <br>
+			    	<a class="detail"> The comment the user inputs is displayed in this box</a> <br>
+
+			        </figcaption>
+			   </figure>
+
+
+
+		   </div>
+
+		   <div class="columns" align="center">
+
+
+		           <br>
+
+
+			   <figure>
+
+			      <figcaption class='comments_Content04'>
+
+					<img src = './asset/img/pro6.png' height=80px>
+			    	<a class="comments_userName04">User name</a> <br>
+			    	<a class="detail">The comment the user inputs is displayed in this box</a> <br>
+
+			        </figcaption>
+			   </figure>
+
+			   <figure>
+
+			    <figcaption class='comments_Content05'>
+
+					<img src = './asset/img/pro7.png' height= 80px>
+			    	<a class="comments_userName05">User name</a> <br>
+			    	<a class="detail">The comment the user inputs is displayed in this box</a> <br>
+
+			    </figcaption>
+			   </figure>
+
+
+
+		   </div>
+
+		   <br>
+
+      <div class="btn">
+
+      <button class='btn02'>Show more</button>
+
+	  </div>
+
+
+    <div class='dialog' id='dialog'>
+      <div class='dialog_close' id='dialogClose'><i class="fa fa-times" aria-hidden="true" onclick='closeDialog()'></i></div>
+      <div class='dialog_input' id='dialog_sign_input'>
+        <input type='text' id='username' value='Email' onfocus="if(value=='Email') value = ''" onblur="if(value=='') value = 'Email'"></input>
+        <input type='text' id='password' value='Password' onfocus="if(value=='Password') value = '', type='password'" onblur="if(value =='') value = 'Password', type='text'"></input>
+      </div>
+      <div class='dialog_term'>
+        <a>By creating an account, you agree with our </a><a href = '#' class='dialog_term_policy'>term and policy</a><a>.</a>
+      </div>
+
+      <div class='dialog_button'>
+        <button onclick="login()">Sign in or Create account</button>
+      </div>
+
+      <div class='dialog_iForgot'>
+        <a href='#'>I forgot my password</a>
+      </div>
+    </div>
+
+    <div class='dialogOverlay' id='dialogOverlay' onclick='closeDialog()'>
+      <a> </a>
+    </div>
+
+    <div class='alertOverlay' id='alertOverlay'>
+      <a id='alertContent'>Something wrong here.</a>
+    </div>
+
+
+    <footer class='footer'>
+      <img src='./asset/img/headLogo.png' alt='logo'>
+
+      <div class='footer_list'>
+        <ul>
+          <li><a href='#' target="_blank">About us</a></li>
+          <li> · </li>
+          <li><a href='#' target="_blank">Terms</a></li>
+          <li> · </li>
+          <li><a href='#' target="_blank">Privacy Policy</a></li>
+          <li> · </li>
+          <li><a href='#' target="_blank">Help</a></li>
+        </ul>
+      </div>
+
+      <div class='footer_socialNet'>
+        <a href='https://www.facebook.com/'target="_blank"><i class="fa fa-facebook fa-2x fa-inverse" aria-hidden="true"></i></a>
+        <a href='https://twitter.com/?lang=en'target="_blank"><i class="fa fa-twitter fa-2x fa-inverse" aria-hidden="true"></i></a>
+        <a href='https://www.snapchat.com/'target="_blank"><i class="fa fa-snapchat-ghost fa-2x fa-inverse" aria-hidden="true"></i></a>
+      </div>
+
+
+    <footer>
+
+
+      <script src="./js/signin.js"></script>
+
+
+  </body>
+
+</html>

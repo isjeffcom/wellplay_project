@@ -52,6 +52,29 @@ button:focus {
        url('../asset/fonts/fontawesome-webfont.svg') format('svg');
 }
 
+/*Scroll Bar Hack*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(34, 34, 34);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(220, 35, 35);
+    -webkit-box-shadow: inset 0 0 6px rgb(220, 35, 35);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgb(62, 145, 207);
+}
+
 /*navbar start*/
 
 .navBar{
