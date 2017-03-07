@@ -1,6 +1,6 @@
 
 
-	
+
 .thumbnail {
 	width:236px;
 	height:177px
@@ -28,25 +28,39 @@
 	background: rgb(62, 145, 207);
 }
 
-.content_cata{
-	
-	position: relative;
-    margin-top:-38%;
-	margin-left:-3.7%;
-	font-size:120%;
-	color:#fafafa;
 
-}
-.table{ 
+.table{
 	border:none;
 	text-align:center;
 }
 
 .table td{
-	
+
 		padding-left:92px;
 		border:none;
 }
+
+.game img{
+	width: 304px;
+	height: 228px;
+}
+
+.content_cata{
+	position:relative;
+	width:100%;
+	display:flex;
+	flex-wrap: wrap;
+	color:#fafafa;
+	font-size:120%;
+	text-align: center;
+}
+
+.game{
+	text-align: center;
+	padding-left: 7.2%;
+	margin-top:4%;
+}
+
 .title_cata{
 	font-family: Agency FB !important;
 	margin-top:10%;
@@ -55,12 +69,10 @@
 	font-size:1em;
 
 	color:#dc2323
-	
+
 }
 
 .title_cata h1{
 	font-family: Agency FB !important;
-	
+
 }
-
-
