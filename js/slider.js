@@ -9,6 +9,7 @@ University of Portsmouth
 
 var slideIndex = 0;
 var textIndex = 0;
+var textH1Index = 0;
 var textH3Index = 0;
 carousel();
 bigText();
@@ -84,9 +85,13 @@ function bigText() {
       b[a].style.display = "none"; //disappear
 
     }
-    textIndex++;
-    if (textIndex > b.length) {textIndex = 1}
-    b[textIndex-1].style.display = "block"; //display
+    console.log(textH1Index, b.length);
+
+    if (textH1Index >= b.length) {textH1Index = 0}
+
+    b[textH1Index].style.display = "block"; //display
+    textH1Index = textH1Index + 1;
+    console.log(textH1Index);
     setTimeout(bigText, 10000); //10s
 }
 

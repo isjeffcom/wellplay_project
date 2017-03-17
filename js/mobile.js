@@ -16,7 +16,6 @@ function hideImage(){
   if(divClass.length != 0){
     for(i=1;i<divClass.length + 1;i++){
       div = document.getElementById('cvl_' + i);
-      console.log(div);
       var vlChildDiv = div.getElementsByClassName('vl_container');
 
       if(vlChildDiv.length > 4){
@@ -38,7 +37,6 @@ function showImage(){
   if(divClass.length != 0){
     for(i=1;i<divClass.length + 1;i++){
       div = document.getElementById('cvl_' + i);
-      console.log(div);
       var vlChildDiv = div.getElementsByClassName('vl_container');
 
       if(vlChildDiv.length > 4){

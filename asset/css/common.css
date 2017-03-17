@@ -85,6 +85,8 @@ button:focus {
   width:96px;
   background-color:#dc2323;
   text-align: center;
+  cursor: pointer;
+  z-index:999;
 }
 
 .navBar_logo:hover{
@@ -95,7 +97,7 @@ button:focus {
 	transition: all 180ms ease-in-out;
 }
 
-.navBar_logo>img{
+.navBar_logo img{
   height:calc(100% - 20px);
   width:calc(100% - 20px);
   margin-top:5px;
