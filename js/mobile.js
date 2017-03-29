@@ -13,7 +13,7 @@ function hideImage(){
   var div;
   var divClass = document.getElementsByClassName('content_video_list');
   //console.log('divClass: ' + divClass.length);
-  if(divClass.length != 0){
+  if(divClass.length != 0)
     for(i=1;i<divClass.length + 1;i++){
       div = document.getElementById('cvl_' + i);
       var vlChildDiv = div.getElementsByClassName('vl_container');
